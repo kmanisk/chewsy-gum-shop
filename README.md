@@ -6,6 +6,10 @@ Responsive chewing-gum storefront built with React, TypeScript, Vite, and Tailwi
 
 https://chewsy-gum-shop-a4mijn.v2.appdeploy.ai/
 
+## Preview
+
+<img src="assets/chewsy-storefront.png" alt="Chewsy Gum Shop storefront preview" width="100%">
+
 ## Features
 
 - Flavor filtering and product search
