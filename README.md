@@ -8,7 +8,7 @@ https://chewsy-gum-shop-a4mijn.v2.appdeploy.ai/
 
 ## Preview
 
-<img src="assets/chewsy-storefront.png" alt="Chewsy Gum Shop storefront preview" width="100%">
+![Chewsy Gum Shop storefront preview](assets/chewsy-storefront.webp)
 
 ## Features
 
