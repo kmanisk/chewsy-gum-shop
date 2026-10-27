@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Add gum to bag and change quantity",
+    "sanity": true,
+    "viewport": "desktop",
+    "covers": ["product browsing", "add to cart", "cart quantity controls", "cart subtotal"],
+    "description": "Verifies the primary shopping flow adds a gum pack, exposes it in the bag, and updates quantity and subtotal.",
+    "steps": [
+      "Find Mint Orbit and click Add to bag",
+      "In the open bag, increase Mint Orbit quantity from 1 to 2",
+      "Confirm the bag shows quantity 2 and the subtotal reflects two packs"
+    ],
+    "expected": "Mint Orbit remains in the bag with quantity 2 and the subtotal is ₹158."
+  },
+  {
+    "name": "Filter and search flavors",
+    "viewport": "desktop",
+    "covers": ["flavor filtering", "product search", "empty search state"],
+    "description": "Verifies shoppers can narrow the catalog by flavor and search text, including a useful empty state.",
+    "steps": [
+      "Select the Mint flavor filter and confirm Mint Orbit is visible while Berry Riot is not",
+      "Return to All and search for grape",
+      "Replace the search with a term that matches no product"
+    ],
+    "expected": "Grape Static appears for the grape search, and a no-match message appears for the unmatched search."
+  },
+  {
+    "name": "Validate demo checkout and complete order",
+    "viewport": "desktop",
+    "covers": ["demo checkout", "checkout validation", "order confirmation", "cart clearing"],
+    "description": "Verifies checkout rejects invalid contact details, accepts valid demo details, confirms no real payment, and clears the bag.",
+    "steps": [
+      "Add Berry Riot to the bag and open Demo checkout",
+      "Submit with an empty name and invalid email, then confirm a validation error is visible",
+      "Enter name Alex and email alex@example.com and place the demo order"
+    ],
+    "expected": "A demo order confirmation is shown stating no payment was charged, and the bag count resets to zero."
+  },
+  {
+    "name": "Shop from mobile layout",
+    "viewport": "mobile",
+    "covers": ["mobile shopping flow", "responsive product catalog", "mobile cart drawer"],
+    "description": "Verifies the responsive storefront remains usable on a phone-sized viewport through product selection and cart review.",
+    "steps": [
+      "Scroll to the product catalog",
+      "Add Watermelon Wave to the bag",
+      "Confirm the shopping bag opens and displays Watermelon Wave with quantity controls"
+    ],
+    "expected": "Watermelon Wave is visible in the mobile bag and can be increased or decreased using the quantity controls."
+  }
+]
